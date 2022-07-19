@@ -29,6 +29,28 @@ header {
     margin: 60px;
 }
 
+/* aqui comienza la duración de las animaciones */
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__zoomInUp {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__rotateIn {
+    --animate-duration: 3s;
+}
+/* aqui termina la duración de las animaciones */
+
 .tittle-logo { 
     align-self: center;
     padding-left: 30px;  /* este es el estilo del nombre de la página */
