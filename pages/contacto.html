@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/8cee457e91.js" crossorigin="anonymous"></script>
@@ -15,17 +16,47 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav"> <!-- Aqui comienza la navegación -->
-            <img src="../resources/LogoMuggulpeque.png" alt="LogoMuggul" class="logo animate__animated animate__fadeIn">
-            <a href="#" class="tittle-logo animate__animated animate__fadeInDown">MuggulShoes</a>
-            <ul class="header__lista animate__animated animate__fadeInUp">
-                <a href="../index.html" class="header__item">Inicio</a>
-                <a href="tienda.html" class="header__item">Tienda</a>
-                <a href="gelria.html" class="header__item">Galería</a>
-                <a href="sobrenos.html" class="header__item">Sobre nosotros</a>
-                <a href="#l" class="header__item">Contacto</a>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/LogoMuggulpeque.png" alt="" class="d-inline-block align-text-top logo">
+                </a>
+            <a href="#" class="tittle-logo">MuggulShoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MuggulShoes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobrenos.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gelria.html">Nuestros Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
         </nav>
+        <p class="text-galery animate__animated animate__flipInX">Contacto</p>
     </header>
     <main>
         <div class="grid"> <!-- aquí comienzan los grid del main -->
@@ -35,14 +66,19 @@
                 </h1>
                 <p class="paragraph animate__animated animate__fadeInRight">o enviárnos tus datos y nosotros te contactamos!</p>
                 <article class="mainindex__contact animate__animated animate__fadeInLeft"> <!-- aquí está el formulario de contacto -->
-                    <form action="" class="">
-                    <p class="mainindex__formtitle">Contacto:</p>
-                    <input class="mainindex__form" type="text" name="Nombre" placeholder="Nombre" required>
-                    <input class="mainindex__form" type="text" name="Correo" placeholder="e-mail" required>
-                    <input class="mainindex__form" type="text" name="Teléfono" placeholder="Teléfono" required>
-                    <textarea name="Mensaje" id="" placeholder="Escribe tu mensaje"></textarea> <!-- Esta es el área de texto -->
-                    <input class="mainindex__button" type="submit" value="Enviar">
-                    </form>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nombre y Apellido</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingPassword" placeholder="email">
+                            <label for="floatingPassword">E-Mail</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comentarios</label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-contact">Enviar</button>
                 </article>
             </div>
             <div class="img-contact animate__animated animate__fadeInRight"> <!-- aquí está el link a Google Maps -->
@@ -52,12 +88,12 @@
         <section class="services">
             <div class="grid"> <!-- aquí comienzan los grid de las tarjetas y las tarjetas -->
                 <div class="items">
-                    <div class="item animate__animated animate__zoomInUp">
+                    <div class="item">
                         <i class="fa-solid fa-map-location-dot"></i>
                         <h3 class="tittle-services">Dónde estamos?</h3>
                         <p>Nos encontramos en el centro de la ciudad cerca de todo y de todos! a metros de la estación subte D</p>
                     </div>
-                    <div class="item animate__animated animate__zoomInUp">
+                    <div class="item">
                         <i class="fa-solid fa-motorcycle"></i>
                         <h3 class="tittle-services">Te lo llevamos!</h3>
                         <p>Contamos con una flota de motos para llevarte tu pedido a dónde vos lo necesites y sin tener que perder tu tiempo</p>
@@ -93,5 +129,7 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

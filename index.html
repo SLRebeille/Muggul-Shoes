@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/8cee457e91.js" crossorigin="anonymous"></script>
@@ -15,16 +16,45 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav"> <!-- Aqui comienza la navegación -->
-            <img src="./resources/LogoMuggulpeque.png" alt="LogoMuggul" class="logo animate__animated animate__fadeIn">
-            <a href="#" class="tittle-logo animate__animated animate__fadeInDown">MuggulShoes</a>
-            <ul class="header__lista animate__animated animate__fadeInUp">
-                <a href="#" class="header__item">Inicio</a>
-                <a href="./pages/tienda.html" class="header__item">Tienda</a>
-                <a href="./pages/gelria.html" class="header__item">Galería</a>
-                <a href="./pages/sobrenos.html" class="header__item">Sobre nosotros</a>
-                <a href="./pages/contacto.html" class="header__item">Contacto</a>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./resources/LogoMuggulpeque.png" alt="" class="d-inline-block align-text-top logo">
+                </a>
+                <a href="#" class="tittle-logo">MuggulShoes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MuggulShoes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/sobrenos.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/gelria.html">Nuestros Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -36,19 +66,46 @@
                 <p class="paragraph">Ya sea para caminar o para correr, nosotros tenemos lo que vos estás buscando.</p>
                 <a href="./pages/tienda.html" class="cta">Tienda</a> <!-- Este es el botón -->
             </div>
-            <div class="img-index">
-                <img src="./resources/Caminar1.png" alt="" class="img animate__animated animate__fadeInRight">
+            <div id="carouselExampleIndicators" class="carousel slide index-carou" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./resources/Nike2701.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/Nikeairmax.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/Nikecamaleon.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./resources/NikeGoretex.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
         <section class="services">
             <div class="grid"> <!-- aquí esta el grid de las tarjetas y comeinzan las tarjetas -->
                 <div class="items">
-                    <div class="item animate__animated animate__zoomInUp">
+                    <div class="item">
                         <i class="fa-solid fa-lightbulb"></i> <!-- estas son las tarjetas -->
                         <h3 class="tittle-services">Porque nosotros?</h3>
                         <p>Te ofrecemos un servicio fácil y rápido y te lo llevamos dirécto hasta tu casa</p>
                     </div>
-                    <div class="item animate__animated animate__zoomInUp">
+                    <div class="item">
                         <i class="fa-solid fa-wallet"></i> <!-- estas son las tarjetas -->
                         <h3 class="tittle-services">Cuidamos tu bolsillo</h3>
                         <p>Tenemos ámplia variedad de productos y contamos con los precios mas bajos del mercado</p>
@@ -84,5 +141,7 @@
             </div>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

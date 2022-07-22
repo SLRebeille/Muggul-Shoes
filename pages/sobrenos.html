@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/8cee457e91.js" crossorigin="anonymous"></script>
@@ -15,30 +16,59 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav"> <!-- Aqui comienza la navegación -->
-            <img src="../resources/LogoMuggulpeque.png" alt="LogoMuggul" class="logo animate__animated animate__fadeIn">
-            <a href="#" class="tittle-logo animate__animated animate__fadeInDown">MuggulShoes</a>
-            <ul class="header__lista animate__animated animate__fadeInUp">
-                <a href="../index.html" class="header__item">Inicio</a>
-                <a href="tienda.html" class="header__item">Tienda</a>
-                <a href="gelria.html" class="header__item">Galería</a>
-                <a href="#" class="header__item">Sobre nosotros</a>
-                <a href="contacto.html" class="header__item">Contacto</a>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/LogoMuggulpeque.png" alt="" class="d-inline-block align-text-top logo">
+                </a>
+                <a href="#" class="tittle-logo">MuggulShoes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MuggulShoes</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./tienda.html">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gelria.html">Nuestros Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
         <section class="about-us2">
-                    <div class="text-about-us animate__animated animate__flipInX">
-                        <h2 class="subtitle2">Sobre Nosotros</h2> <!-- aquí esta el título de la sección -->
-                    </div>
+            <div class="text-about-us">
+                <h2 class="subtitle2">Sobre Nosotros</h2> <!-- aquí esta el título de la sección -->
+            </div>
         </section>
     </header>
     <main>
         <section class="about-us">
-                    <div class="text-about-us"> <!-- aquí comienza el main -->
-                        <p class="paragraph">Somos dos personas, como vos, que nos gusta mirar películas y pasar el domingo en la cama mirando la serie de Netflix.
-                            Te ofrecemos nuestros servicios porque estamos para ayudarte y comprando, vos nos ayudas a nosotros.
-                        </p>
-                </div>
+            <div class="text-about-us"> <!-- aquí comienza el main -->
+                <p class="paragraph">Somos dos personas, como vos, que nos gusta mirar películas y pasar el domingo en la cama mirando la serie de Netflix.
+                    Te ofrecemos nuestros servicios porque estamos para ayudarte y comprando, vos nos ayudas a nosotros.
+                </p>
+            </div>
         </section>
         <section class="about grid"> <!-- estos son los grid de las tarjetas y la imagen-->
             <div class="texts-about animate__animated animate__fadeInRight">
@@ -86,6 +116,16 @@
                 </a>
             </div>
         </div>
+        <section class="navbar bg-light">
+            <div class="container-fluid navbar-about">
+                <form class="d-flex search-about" role="search">
+                    <input class="form-control me-2 form-about" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success btn-about" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
     </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
