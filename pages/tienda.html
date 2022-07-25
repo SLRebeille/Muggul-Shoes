@@ -19,11 +19,11 @@
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../resources/LogoMuggulpeque.png" alt="" class="d-inline-block align-text-top logo">
+                    <img src="../resources/LogoMuggulpeque.png" alt="" class="d-inline-block align-text-top logo animate__animated animate__pulse">
                 </a>
-                <a href="#" class="tittle-logo">MuggulShoes</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
+                <a href="#" class="tittle-logo animate__animated animate__fadeInDown">MuggulShoes</a>
+                <button class="navbar-toggler animate__animated animate__backInRight" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span><!-- aquí comienza el botón de la navegación -->
                 </button>
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
@@ -56,12 +56,12 @@
                 </div>
             </div>
         </nav>
-        <p class="store__shop">Tienda</p>
+        <p class="store__shop animate__animated animate__bounceInUp">Tienda</p>
     </header>
     <main class="store"> <!-- Esta es la Galería central -->
-        <div class="container-shop-carou">
+        <div class="container-shop-carou animate__animated animate__fadeIn">
             <div id="carouselExampleFade" class="carousel slide carousel-fade shop-carou" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner"><!-- aquí comienza el carrusel de la tienda -->
                     <div class="carousel-item active">
                     <img src="../resources/Zapatillas1.png" class="d-block w-100" alt="...">
                 </div>
@@ -86,7 +86,7 @@
         </div>
     </div>
     <div class="dropdown dropdown-shop">
-        <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-dark dropdown-toggle animate__animated animate__fadeInLeft" type="button" data-bs-toggle="dropdown" aria-expanded="false"><!-- este es el selector de colores -->
         Color
         </button>
         <ul class="dropdown-menu">
@@ -95,7 +95,7 @@
             <li><a class="dropdown-item" href="#">Beige</a></li>
             <li><a class="dropdown-item" href="#">Blanco</a></li>
         </ul>
-        <button type="button" class="btn btn-dark">Comprar</button>
+        <button type="button" href="./compra.html" class="btn btn-dark animate__animated animate__fadeInRight"><a class="btn-compra" href="./compra.html">Comprar</a></button><!-- este es el botón de compra -->
     </div>
     </main>
         <footer> 

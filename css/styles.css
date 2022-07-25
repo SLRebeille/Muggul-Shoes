@@ -119,6 +119,14 @@ body {
     text-decoration: none;
 }
 
+.tittle-logo-compra {
+    margin-right: 780px;
+}
+
+.tittle-logo:hover {
+    color: white;
+}
+
 .header {
     height: 400px;   /* este es el estilo del header */
 }
@@ -134,13 +142,22 @@ body {
 
 .dropdown-shop {
     margin: 50px;
-    text-align: center;      /* este es el estilo del botón desplegable de la tienda */
+    text-align: center;  /* este es el estilo del botón desplegable de la tienda */
 }
 
 .store {
     background-color:#fff;  /* este es el estilo del main de la tienda */
     padding: 20px;
     width: 100%;
+}
+
+.btn-compra {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-compra:hover {
+    color: black;
 }
 
 .subtile-contact {
@@ -300,7 +317,7 @@ footer {
 }
 
 .text-footer {
-    grid-column: 1/-1;
+    grid-column: 1/-2;
     margin-bottom: 50px; /* este es el estilo del texto del footer */
     font-size: 35px;
 }
@@ -443,7 +460,30 @@ footer {
 }
 
 .galery-carou {
-    width: 200px;
+    width: 200px;        /* este es el estílo del carrusel de la galería*/
+}
+
+.btn-compra2 {
+    grid-column: 6/7;
+    width: 250px;
+    height: 100px;            /* este es el estílo del botón de la página de compra*/
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #000;
+}
+
+.btn-compra2:hover {
+    background-color: white;     /* este es el estílo del hover del botón de la página de compra*/
+    border: solid 3px black;
+}
+
+.href-btn {
+    text-decoration: none;        /* este es el estílo del link del botón de la página de compra*/
+    color: white;
+}
+
+.href-btn:hover {
+    color: black;
 }
 
 /* Mediaquery Tablet */
@@ -451,6 +491,9 @@ footer {
 @media (min-width: 576px) and (max-width: 992px) {
     .header{
         height: 400px; /* este es la reorganización del header */
+    }
+    .tittle-logo-compra {
+        margin-right: 315px;
     }
     .logo {
         width: 70px; /* este es la reorganización del logo */
@@ -588,6 +631,9 @@ footer {
     .tittle-logo {
         padding-left: 10px; /* este es la reorganización del título de la página */
         font-size: 35px;
+    }
+    .tittle-logo-compra {
+        margin-right: 165px;
     }
     .img {
         max-width: 170px; /* este es la reorganización de las imágenes */
