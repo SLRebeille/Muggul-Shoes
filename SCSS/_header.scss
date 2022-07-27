@@ -1,0 +1,68 @@
+
+.navbar-toggler {
+    margin-right: 30px;  /* este es el estilo del botón de la navegación */
+}
+
+.navbar-toggler-icon {
+    padding: 20px;
+}
+
+.bg-dark {
+    background: linear-gradient(180deg, #000 99%, #fff 1%); /* este es el estilo del header */
+}
+
+.offcanvas {
+    background: linear-gradient(180deg, #000 99%, #fff 1%); /* este es el estilo del fondo de la navegación desplegable */
+}
+
+.d-flex {
+    width: 350px;         /* este es el estilo del placeholder de la navegación desplegable */
+    border-radius: 15px;
+}
+
+.form-control {
+    margin-top: 15px;  /* este es el estilo de la barra de busqueda de la nav desplegable */
+}
+
+.btn-success {
+    background-color: #000;     /* este es el estilo del botón de la navegación desplegable */
+    border-color: white;
+}
+
+.btn-success:hover {
+    background-color: rgb(255, 255, 255); /* este es el estilo del hover del botón de la navegación desplegable */
+}
+.btn:hover {
+    color: black;    /* este es el estilo del hover del botón de la navegación desplegable */
+}
+
+.logo {
+    width: 100px; /* este es el estilo del logo */
+    margin: 10px;
+}
+
+.offcanvas-title {
+    margin-top: 10px;
+    font-weight: 900; /* este es el estilo del título de la navegación desplegable */
+    font-size: 30px;
+}
+
+.nav-link {
+    font-weight: 500; /* este es el estilo de los link de la navegación desplegable */
+    font-size: 20px;
+}
+
+.tittle-logo { 
+    align-self: left;
+    color: white;  /* este es el estilo del nombre de la página */
+    font-size: 45px;
+    text-decoration: none;
+}
+
+.tittle-logo:hover {
+    color: white;
+}
+
+.header {
+    height: 400px;   /* este es el estilo del header */
+}

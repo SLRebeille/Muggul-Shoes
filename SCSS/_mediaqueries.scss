@@ -1,0 +1,234 @@
+
+/* Mediaquery Tablet */
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .header{
+        height: 400px; /* este es la reorganización del header */
+    }
+    .tittle-logo-compra {
+        margin-right: 315px;
+    }
+    .logo {
+        width: 70px; /* este es la reorganización del logo */
+        margin-top: 20px;
+    }
+    .tittle-logo {
+        font-size: 45px; /* este es la reorganización del título de la página */
+        padding: 0px 20px;
+    }
+    .header__lista {
+        padding: 0 30px;  /* este es la reorganización de la navegación */
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .grid {
+        gap: 30px; /* este es la reorganización de las grid */
+    }
+    .index-carou, .texts-index {
+        grid-column: 1/-1;  /* este es la reorganización de la imagen y el texto del index */
+    }
+    .index-carou {
+        text-align: center;  /* este es la reorganización del contenedor de las imagenes del index*/
+    }
+    .texts-index {
+        margin-top: 40px;
+    }
+    .services {
+        height: auto; /* este es la reorganización de las tarjetas */
+        margin-top: 40px;
+    }
+    .item {
+        width: 60%;
+        margin: 40px 0;
+        height: auto;  /* este es la reorganización del contenido dentro de las tarjetas */
+        padding: 40px;
+    }
+    .img-about {
+        grid-column: 1/-1;
+        grid-row: 2/3;    /* este es la reorganización de la imagen sobre nosotros */
+        text-align: center;
+    }
+    .texts-about {
+        grid-column: 1/-1;
+        grid-row: 1/2;     /* este es la reorganización del texto sobre nosotros */
+        align-self: center;
+    }
+    .about-us2 {
+        padding-top: 40px;
+    }
+    .store__shop {
+        margin-top: 90px;    /* este es la reorganización del título de la tienda */
+    }
+    .text-galery {
+        margin-top: 90px;
+    }
+    .navbar-about {
+        margin-left: 90px;
+    }
+    .container-shop-carou {
+        width: 450px;
+        margin-bottom: 30px; /* este es la reorganización del contenedor de las imagenes de la tienda */
+        left: -9999px;
+        right: -9999px;  
+        margin: 0 auto;
+        position:static;
+    }
+    .text-contact {
+        margin-left: 50px;
+    }
+    .paragraph {
+        margin-left: 50px;        /* este es la reorganización del contacto */
+    }
+    .mainindex__contact {
+        margin-left: 100px;
+    }
+    .form-control {
+        width: 530px;    /* este es el estilo del botón de la barra de búsqueda del footer */
+    }
+
+/* aquí comienza la reorganización de las grid de la galería */
+    .imagen1 {
+        grid-column: 1/2;
+    }
+    
+    .imagen2 {
+        grid-column: 2/3;
+    }
+    
+    .imagen3 {
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+    
+    .imagen4 {
+        grid-column: 2/3;
+        grid-row: -2/-3;
+    }
+    
+    .imagen5 {
+        grid-column: 2/3;
+        grid-row: 2/-1;
+    }
+    
+    .imagen6 {
+        grid-column: 1/2;
+        grid-row: 1/-2;
+    }
+    
+    .imagen7 {
+        grid-column: 1/2;;
+    }
+    
+    .imagen8 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    [class^="imagen"] {
+        margin-left: 30px; /* este es la reorganización de las imágenes de la galería */
+    }
+    .img-contact, .texts-contact {
+        grid-column: 1/-1; /* este es la reorganización de la imagen y el texto de contacto */
+    }
+    .img-contact {
+        text-align: center;
+    }
+}
+
+/* Mediaquery Celular */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .logo {
+        margin: 0px; /* este es la reorganización del logo */
+        width: 50px;
+    }
+    .tittle-logo {
+        margin-left: 0px; /* este es la reorganización del título de la página */
+        font-size: 35px;
+    }
+    .tittle-logo-compra {
+        margin-right: 165px;
+    }
+    .img {
+        max-width: 170px; /* este es la reorganización de las imágenes */
+    }
+    .header__lista {
+        padding: 0 10px;
+        margin-top: 10px; /* este es la reorganización de la lista de la navegación */
+        margin-right: 10px;
+    }
+    .item {
+        width: 100%;
+        margin: 5px 30px; /* este es la reorganización de las tarjetas */
+        height: 200px;
+        padding: 0px;
+    }
+    .index-carou, .texts-index {
+        grid-column: 1/-1; /* este es la reorganización del texto y la imagen del index */
+    }
+    .index-carou {
+        text-align: center; /* este es la reorganización de la imagen del index */
+    }
+    .texts-about {
+        margin: 15px; /* este es la reorganización del texto sobre nosotros */
+    }
+    [class^="footer-item"] { 
+        grid-column: 1/-1; /* este es la reorganización de las imagenes de las redes del footer */
+    }
+    .store__shop {
+        margin-top: 130px;  /* este es la reorganización del título de la tienda */
+        font-size: 40px;
+    }
+    .about-us2 {
+        padding-top: 125px; /* este es la reorganización del título sobre nosotros */
+    }
+    .subtitle2 {
+        font-size: 40px;
+    }
+    form {
+        width: 300px; /* este es la reorganización del formulario */
+    }
+    iframe {
+        width: 300px; /* este es la reorganización del Google Maps */
+    }
+    .text-galery {
+        margin-top: 120px; /* este es la reorganización del texto de la galería */
+        font-size: 40px;
+    }
+    [class^="imagen"] {
+        grid-column: 2/-2; /* este es la reorganización de las grid de las imagenes de la galería */
+    }
+    .img-contact, .texts-contact {
+        grid-column: 1/-1; /* este es la reorganización de las grid de la imagen y el texto del contacto */
+    }
+    .img-contact {
+        text-align: center; /* este es la reorganización de la imagen del contacto */
+    }
+    .navbar-about {
+        margin-left: 0px;    /* este es la reorganización de la barra del footer de sobre nosotros */
+    }
+    .container-shop-carou {
+        width: 300px;
+        margin-bottom: 30px;
+        left: -9999px;         /* este es la reorganización del contenedor de las imagenes de la tienda */
+        right: -9999px;  
+        margin: 0 auto;
+        position:static;
+    }
+    .form-control {
+        width: 300px;       /* este es el estilo del botón de la barra de búsqueda del footer */
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        margin-bottom: 5px;
+    }
+    .services {
+        height: 420px;  /* este es el estilo de las tarjetas */
+        background: linear-gradient(180deg, #fff 50%, #000 50%);
+    }
+    .d-flex {
+        width: 300px;
+    }
+    .form-control {
+        margin-bottom: 20px;
+    }
+}

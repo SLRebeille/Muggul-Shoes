@@ -1,0 +1,359 @@
+@import "footer";
+@import "header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif; /* aquí está el estilo del body */
+}
+
+.navbar {
+    position: static;
+}
+
+.index-carou {
+    width: 100%; /* este es el estilo del carrusel del index */
+    height: auto;
+    grid-column: 7/12;
+    margin-bottom: 100px;
+}
+
+.w-100 {
+    border-radius: 20px;  /* este es el estilo del carrusel de las imagenes */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;                        /* aquí están los estilos de las grid en general */
+    height: 100%;
+    margin: auto;
+    grid-row-gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* aqui comienza la duración de las animaciones */
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 4s;
+}
+
+.animate__animated.animate__zoomInUp {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__rotateIn {
+    --animate-duration: 3s;
+}
+
+/* aqui termina la duración de las animaciones */
+
+.tittle-logo-compra {
+    margin-right: 780px;
+}
+
+.container-shop-carou {
+    width: 450px;
+    margin-bottom: 30px; /* este es el estilo del contenedor de las imagenes de latienda */
+    left: -9999px;
+    right: -9999px;  
+    margin: 0 auto;
+    position:static;
+}
+
+.dropdown-shop {
+    margin: 50px;
+    text-align: center;  /* este es el estilo del botón desplegable de la tienda */
+}
+
+.store {
+    background-color:#fff;  /* este es el estilo del main de la tienda */
+    padding: 20px;
+    width: 100%;
+}
+
+.btn-compra {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-compra:hover {
+    color: black;
+}
+
+.subtile-contact {
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.paragraph {
+    margin-bottom: 20px;  /* este es el estilo de los párrafos */
+}
+
+.img {
+    width: 95%;
+    max-width: 500px;
+}
+
+.text-index {
+    font-weight: 600;
+}                           /* este es el estilo del texto de index */
+
+.subtitle-index {
+    font-weight: 400; 
+}
+
+.texts-index {
+    grid-column: 1/7;
+    padding-right: 20px;     /* este es el estilo de los textos del index */
+    padding-bottom: 150px;
+}
+
+.texts-contact p {
+    text-align: justify;
+}
+
+.text-contact {
+    font-weight: 600px;  /* este es el estilo del título de contacto */
+}
+
+
+.cta {
+    width: 130px;
+    background-color: black;  
+    color: white;
+    display: inline-block;      /* este es el estilo del botón del index */
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 100px;
+}
+
+.tittle-services {
+    margin: 20px 0; /* este es el estilo de las tarjetas */
+}
+
+.services {
+    height: 370px;  /* este es el estilo de las tarjetas */
+    background: linear-gradient(180deg, #fff 50%, #000 50%);
+}
+
+.form-about {
+    border: 1px solid #006eff48;
+}
+
+.about-us2 {
+    padding-top: 80px; /* este es el estilo de la sección sobre nosotros */
+}
+
+.subtitle2 {
+    color: black;
+    font-size: 55px;
+}
+
+.text-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;  /* este es el estilo de los textos de la sección sobre nosotros */
+    justify-content: center;
+    font-size: 25px;
+}
+
+.paragraph {
+    margin-top: 15px;
+    color: rgb(151, 151, 151);
+    font-size: 20px;
+}
+
+.about-us {
+    background-color: #000;
+    color: white;           /* este es el estilo del main sobre nosotros */
+    height: auto;
+    padding: 60px 0;
+}
+
+.about {
+    padding: 80px 0;
+}
+
+.texts-about {
+    grid-column: 7/13;       /* este es el estilo las tarjetas sobre nosotros */
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+}
+
+.img-about {
+    grid-column: 1/7;      /* este es el estilo de la imagen sobre nosotros */
+    grid-row: 1/-1;
+}
+
+.store__shop {
+    text-align: center;
+    font-size: 50px;        /* este es el estilo del título de la tienda */
+    margin-top: 100px;
+    font-weight: 400;
+}
+
+.store__art {
+    display: flex;
+    flex-wrap: wrap; /* <!-- Aqui se encuentra el estilo del contenedo de la imagen --> */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.store__shoes {
+    border: 3px solid #006eff;
+    border-radius: 50px; /* <!-- Aqui se encuentra el estilo de la imagen --> */
+    padding: 5px;
+    width: 400px;
+}
+
+.store__prices {
+    display: flex;
+    flex-wrap: wrap; /* <!-- Aqui esta el estilo del contenedor del selector de colores --> */
+    justify-content: center;
+    padding: 10px;
+}
+
+.store__colorselector {
+    background-color: #e9e9e9; /* <!-- Este es el estilo del selector de colores --> */
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 40px;
+    border: 3px solid #006eff;
+    border-radius: 50px;
+}
+
+.store__price {
+    background-color: #e9e9e9;  /* <!-- Este es el estilo del botón de compra --> */
+    margin-top: 32px;
+    padding: 5px;
+    border: 3px solid #006eff;
+    border-radius: 50px;
+}
+
+.store__price:hover { /* <!-- Este es el hover para el botón de compra --> */
+    cursor: pointer;
+}
+
+.mainindex__contact {
+    width: 500px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;       /* este es el estilo del formulario */
+    background-color: #006eff05;
+    margin-bottom: 150px;
+    margin-right: 5px;
+}
+
+.img-contact {
+    margin-bottom: 150px; /* este es el estilo del mapa de google maps */
+    margin-left: 5px;
+}
+
+.btn-contact {
+    width: 250px;         /* este es el estilo del botón del formulario de contacto */
+    margin-top: 20px;
+}
+
+/* aquí comienzan la ubicación en las grid de las imagenes de la galería */
+
+.imagen1 {
+    grid-column: 1/2;
+}
+
+.imagen2 {
+    grid-column: 2/3;
+}
+
+.imagen3 {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+
+.imagen4 {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+}
+
+.imagen5 {
+    grid-column: 3/4;
+}
+
+.imagen6 {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+}
+
+.imagen7 {
+    grid-column: 4/5;
+}
+
+.imagen8 {
+    grid-column: 4/5;
+    grid-row: 1/-1;
+}
+
+.card {
+    width: 250px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 80px;
+}
+
+.galery-img {
+    width: 250px;  /* este es el estílo de las imagenes*/
+    margin: 10px;
+    border: 5px solid #006eff79;
+    margin-bottom: 60px;
+}
+
+.text-galery {
+    text-align: center;  /* este es el estílo del texto de la galería*/
+    font-size: 50px;
+    margin-top: 85px;
+}
+
+.galery-carou {
+    width: 200px;        /* este es el estílo del carrusel de la galería*/
+}
+
+.btn-compra2 {
+    grid-column: 6/7;
+    width: 250px;
+    height: 100px;            /* este es el estílo del botón de la página de compra*/
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #000;
+}
+
+.btn-compra2:hover {
+    background-color: white;     /* este es el estílo del hover del botón de la página de compra*/
+    border: solid 3px black;
+}
+
+.href-btn {
+    text-decoration: none;        /* este es el estílo del link del botón de la página de compra*/
+    color: white;
+}
+
+.href-btn:hover {
+    color: black;
+}
+
+@import "mediaqueries";
