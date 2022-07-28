@@ -1,5 +1,20 @@
 /* Aqui comienza SASS tienda */
 
+
+.store1 {
+    margin-top: 100px;
+
+    &__shops {
+        margin-bottom: 20px;
+    }
+
+    &__shop {
+        text-align: center;
+        font-size: 50px;        /* este es el estilo del título de la tienda */
+        font-weight: 500;
+    }
+}
+
 .store {
     background-color:$color-principal;  /* este es el estilo del main de la tienda */
     padding: 20px;
@@ -24,7 +39,7 @@
         color: $color-principal;
         
 
-        &__btn:hover {
+        &:hover {
             color: $color-secundario;
         }
     }

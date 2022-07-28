@@ -1,0 +1,24 @@
+
+/* SASS de las animaciones */
+.animate {
+
+    &__animated.animate__fadeIn {
+        --animate-duration: 4s;
+    }
+
+    &__animated.animate__fadeInDown {
+        --animate-duration: 4s;
+    }
+
+    &__animated.animate__fadeInUp {
+        --animate-duration: 4s;
+    }
+
+    &__animated.animate__zoomInUp {
+        --animate-duration: 2s;
+    }
+
+    &__animated.animate__rotateIn {
+        --animate-duration: 2s;
+    }
+}

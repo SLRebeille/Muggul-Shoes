@@ -1,0 +1,66 @@
+/* Aqui comienza SASS compra */
+
+.tittle-logo-compra {
+    margin-right: 780px;
+}
+
+.compra2 {
+    padding-top: 80px; /* este es el estilo de la sección sobre nosotros */
+    
+    &_subtitle2 {
+    color: $color-secundario;
+    font-size: 55px;
+    }
+
+    &_text {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;  /* este es el estilo de los textos de la sección sobre nosotros */
+    justify-content: center;
+    font-size: 25px;
+    }
+}
+
+.compra {
+    background-color: $color-secundario;
+    color: $color-principal;           /* este es el estilo del main sobre nosotros */
+    height: auto;
+    padding: 60px 0;
+
+    &_paragraph {
+        margin-top: 15px;
+        color: rgb(151, 151, 151);
+        font-size: 20px;
+    }
+
+    &_text {
+        margin-left: 15px;
+    }
+}
+
+.compras {
+    padding: 80px 0;
+
+    &__btn {
+        grid-column: 6/7;
+        width: 250px;
+        height: 100px;            /* este es el estílo del botón de la página de compra*/
+        font-weight: 700;
+        font-size: 25px;
+        background-color: $color-secundario;
+
+    &:hover {
+        background-color: $color-principal;     /* este es el estílo del hover del botón de la página de compra*/
+        border: solid 3px $color-secundario;
+    }
+    }
+
+    &__href-btn {
+        text-decoration: none;        /* este es el estílo del link del botón de la página de compra*/
+        color: $color-principal;
+
+    &:hover {
+        color: $color-secundario;
+    }
+    }
+}

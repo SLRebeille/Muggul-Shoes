@@ -16,28 +16,33 @@
         font-size: 45px; /* este es la reorganización del título de la página */
         padding: 0px 20px;
     }
-    .header__lista {
-        padding: 0 30px;  /* este es la reorganización de la navegación */
-        margin-top: 10px;
-        margin-right: 10px;
-    }
     .grid {
         gap: 30px; /* este es la reorganización de las grid */
     }
-    .index-carou, .texts-index {
+    .index__carou, .index__texts {
         grid-column: 1/-1;  /* este es la reorganización de la imagen y el texto del index */
     }
-    .index-carou {
+    .index__carou {
         text-align: center;  /* este es la reorganización del contenedor de las imagenes del index*/
     }
-    .texts-index {
+    .index__texts {
         margin-top: 40px;
     }
-    .services {
-        height: auto; /* este es la reorganización de las tarjetas */
+    .contact__services {
+        height: auto; /* este es la reorganización de las tarjetas del contact */
         margin-top: 40px;
     }
-    .item {
+    .index__services {
+        height: auto; /* este es la reorganización de las tarjetas del index */
+        margin-top: 40px;
+    }
+    .contact__services-item {
+        width: 60%;
+        margin: 40px 0;
+        height: auto;  /* este es la reorganización del contenido dentro de las tarjetas */
+        padding: 40px;
+    }
+    .index__services-item {
         width: 60%;
         margin: 40px 0;
         height: auto;  /* este es la reorganización del contenido dentro de las tarjetas */
@@ -62,9 +67,6 @@
     .galery_text {
         margin-top: 90px;
     }
-    .navbar-about {
-        margin-left: 90px;
-    }
     .store__carou {
         width: 450px;
         margin-bottom: 30px; /* este es la reorganización del contenedor de las imagenes de la tienda */
@@ -73,14 +75,15 @@
         margin: 0 auto;
         position:static;
     }
-    .text-contact {
+    .contact__text {
         margin-left: 50px;
     }
-    .paragraph {
+    .contact__paragraph {
         margin-left: 50px;        /* este es la reorganización del contacto */
     }
-    .mainindex__contact {
-        margin-left: 100px;
+
+    .contact__mainindex {
+        margin-right: auto;
     }
 
 /* aquí comienza la reorganización de las grid de la galería */
@@ -123,7 +126,7 @@
     [class^="imagen"] {
         margin-left: 30px; /* este es la reorganización de las imágenes de la galería */
     }
-    .img-contact, .texts-contact {
+    .contact__img, .contact__texts {
         grid-column: 1/-1; /* este es la reorganización de la imagen y el texto de contacto */
     }
     .img-contact {
@@ -143,29 +146,34 @@
         font-size: 35px;
     }
     .tittle-logo-compra {
-        margin-right: 165px;
+        margin-left: 40px;
+    }
+    .compra {
+        margin-top: 100px;
     }
     .img {
         max-width: 170px; /* este es la reorganización de las imágenes */
     }
-    .item {
+    .contact__services-item {
         width: 100%;
         margin: 5px 30px; /* este es la reorganización de las tarjetas */
         height: 200px;
         padding: 0px;
     }
-    .index-carou, .texts-index {
+    .index__services-item {
+        width: 100%;
+        margin: 5px 30px; /* este es la reorganización de las tarjetas */
+        height: 200px;
+        padding: 0px;
+    }
+    .index__carou, .index__texts {
         grid-column: 1/-1; /* este es la reorganización del texto y la imagen del index */
     }
-    .index-carou {
+    .index__carou {
         text-align: center; /* este es la reorganización de la imagen del index */
     }
     .about-us_text {
         margin: 15px; /* este es la reorganización del texto sobre nosotros */
-    }
-    
-    [class^="footer-item"] { 
-        grid-column: 1/-1; /* este es la reorganización de las imagenes de las redes del footer */
     }
     .store1__shop {
         margin-top: 130px;  /* este es la reorganización del título de la tienda */
@@ -177,7 +185,7 @@
     .about-us2_subtitle2 {
         font-size: 40px;
     }
-    form {
+    .contact__mainindex {
         width: 300px; /* este es la reorganización del formulario */
     }
     iframe {
@@ -190,10 +198,10 @@
     [class^="galery_imagen"] {
         grid-column: 2/-2; /* este es la reorganización de las grid de las imagenes de la galería */
     }
-    .img-contact, .texts-contact {
+    .contact__img, .contact__texts {
         grid-column: 1/-1; /* este es la reorganización de las grid de la imagen y el texto del contacto */
     }
-    .img-contact {
+    .contact__img {
         text-align: center; /* este es la reorganización de la imagen del contacto */
     }
     .store__carou {
@@ -208,8 +216,12 @@
         margin-left: auto;
         margin-bottom: 5px;
     }
-    .services {
-        height: 420px;  /* este es el estilo de las tarjetas */
+    .contact__services {
+        height: 420px;  /* este es el estilo de las tarjetas del contacto */
+        background: linear-gradient(180deg, #fff 50%, #000 50%);
+    }
+    .index__services {
+        height: 420px;  /* este es el estilo de las tarjetas del index */
         background: linear-gradient(180deg, #fff 50%, #000 50%);
     }
     .d-flex {

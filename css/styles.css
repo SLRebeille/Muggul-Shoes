@@ -1,62 +1,99 @@
 @charset "UTF-8";
-/* Aqui comienza SASS footer */
-.items {
-  grid-column: 1/-1;
-  display: flex;
-  width: 100%;
-  /* este es el estilo de los íconos del footer */
+/* Este es el SASS del index */
+/* Estilos de la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  /* aquí está el estilo del body */ }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90%;
+  max-width: 1100px;
+  /* aquí están los estilos de las grid en general */
   height: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.item {
-  width: 45%;
-  background-color: white;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  /* este es el estilo de los íconos del footer */
+  margin: auto;
+  grid-row-gap: 10px;
   overflow: hidden;
-  height: 220px;
-  padding: 20px 10px;
-  text-align: center; }
+  align-items: center; }
 
-[class^="fa-solid"] {
+/* Colores */
+/* Imagenes */
+.img {
+  width: 95%;
+  max-width: 500px; }
+
+/* Tarjetas index/contacto */
+.fa-solid {
   font-size: 50px;
-  /* este es el estilo de los íconos del footer */
   text-align: center; }
 
-.search-about {
-  background-color: white;
-  width: 500px;
-  margin-bottom: 50px;
-  /* este es el estilo de la barra de búsqueda del footer */
-  margin-top: 40px; }
-
-.btn-about:hover {
-  background-color: #000;
-  /* este es el estilo del botón de la barra de búsqueda del footer */
-  border: solid #006eff;
-  color: white; }
-
-footer {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  /* este es el estilo del footer */
-  padding: 60px 0; }
-  footer .footer-text {
-    grid-column: 1/-2;
-    margin-bottom: 50px;
-    /* este es el estilo del texto del footer */
-    font-size: 35px; }
-  footer [class^="footer-item"] a {
-    color: white;
-    /* este es el estilo de las imagenes de las redes del footer */
-    font-size: 30px; }
-  footer [class^="footer-item"] {
-    grid-column: span 3;
-    /* este es el estilo las grid de las images del footer*/
-    margin-bottom: 60px; }
+.index {
+  /* este es el estilo del texto de index */ }
+  .index__texts {
+    grid-column: 1/7;
+    padding-right: 20px;
+    /* este es el estilo de los textos del index */
+    padding-bottom: 150px; }
+  .index__text {
+    font-weight: 600; }
+  .index__subtitle {
+    font-weight: 400; }
+  .index__carou {
+    width: 100%;
+    /* este es el estilo del carrusel del index */
+    height: auto;
+    grid-column: 7/12;
+    margin-bottom: 100px; }
+  .index__paragraph {
+    margin-bottom: 20px; }
+  .index__button {
+    width: 130px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    /* este es el estilo del botón del index */
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 100px; }
+    .index__button:hover {
+      color: #fff; }
+  .index__services {
+    height: 370px;
+    /* este es el estilo de las tarjetas */
+    background: linear-gradient(180deg, #fff 50%, #000 50%); }
+  .index__tittle-services {
+    margin: 20px 0;
+    /* este es el estilo de las tarjetas */ }
+  .index__services-items {
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;
+    /* este es el estilo de los iconos de las tarjetas */
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+  .index__services-item {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    /* este es el estilo de las tarjetas */
+    overflow: hidden;
+    height: 220px;
+    padding: 20px 10px;
+    text-align: center; }
+  .index__fa-solid {
+    font-size: 50px;
+    /* este es el estilo de los íconos de las tarjetas */
+    text-align: center; }
 
 /* Aqui comienza SASS header */
 .navbar {
@@ -126,7 +163,39 @@ footer {
 .tittle-logo:hover {
   color: white; }
 
-/* COLORES */
+/* Estilos de la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  /* aquí está el estilo del body */ }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 90%;
+  max-width: 1100px;
+  /* aquí están los estilos de las grid en general */
+  height: 100%;
+  margin: auto;
+  grid-row-gap: 10px;
+  overflow: hidden;
+  align-items: center; }
+
+/* Colores */
+/* Imagenes */
+.img {
+  width: 95%;
+  max-width: 500px; }
+
+/* Tarjetas index/contacto */
+.fa-solid {
+  font-size: 50px;
+  text-align: center; }
+
 /* Aqui comienza SASS sobre nosotros */
 .about-us2 {
   padding-top: 80px;
@@ -174,8 +243,17 @@ footer {
     /* este es el estilo de la imagen sobre nosotros */
     grid-row: 1/-1; }
 
-/* Aqui termina SASS sobre nosotros */
 /* Aqui comienza SASS tienda */
+.store1 {
+  margin-top: 100px; }
+  .store1__shops {
+    margin-bottom: 20px; }
+  .store1__shop {
+    text-align: center;
+    font-size: 50px;
+    /* este es el estilo del título de la tienda */
+    font-weight: 500; }
+
 .store {
   background-color: #fff;
   /* este es el estilo del main de la tienda */
@@ -196,7 +274,7 @@ footer {
   .store__btn {
     text-decoration: none;
     color: #fff; }
-    .store__btn__btn:hover {
+    .store__btn:hover {
       color: #000; }
 
 /* Aqui comienza SASS galería */
@@ -228,39 +306,159 @@ footer {
     grid-column: 4/5;
     grid-row: 1/-1; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+/* Este es el SASS de contacto */
+.contact1 {
+  text-align: center; }
+  .contact1_texts {
+    margin-top: 85px; }
+  .contact1_text {
+    font-size: 50px; }
 
-body {
-  font-family: 'Raleway', sans-serif;
-  /* aquí está el estilo del body */ }
+.contact__subtitle {
+  font-weight: 400;
+  margin-left: 5px; }
 
-.index-carou {
-  width: 100%;
-  /* este es el estilo del carrusel del index */
-  height: auto;
-  grid-column: 7/12;
-  margin-bottom: 100px; }
+.contact__paragraph {
+  margin-bottom: 20px;
+  /* este es el estilo de los párrafos */ }
 
-.w-100 {
-  border-radius: 20px;
-  /* este es el estilo del carrusel de las imagenes */ }
+.contact__texts p {
+  text-align: justify; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  width: 90%;
-  max-width: 1100px;
-  /* aquí están los estilos de las grid en general */
-  height: 100%;
+.contact__text {
+  font-weight: 600px;
+  /* este es el estilo del título de contacto */ }
+
+.contact__mainindex {
+  width: 500px;
   margin: auto;
-  grid-row-gap: 10px;
-  overflow: hidden;
-  align-items: center; }
+  padding: 10px 20px;
+  box-sizing: border-box;
+  /* este es el estilo del formulario */
+  background-color: #006eff05;
+  margin-bottom: 150px;
+  margin-right: 5px; }
 
-/* aqui comienza la duración de las animaciones */
+.contact__img {
+  margin-bottom: 150px;
+  /* este es el estilo del mapa de google maps */
+  margin-left: 5px; }
+
+.contact__btn {
+  width: 250px;
+  /* este es el estilo del botón del formulario de contacto */
+  margin-top: 20px; }
+  .contact__btn:hover {
+    color: #fff; }
+
+.contact__services {
+  height: 370px;
+  /* este es el estilo de las tarjetas */
+  background: linear-gradient(180deg, #fff 50%, #000 50%); }
+
+.contact__tittle-services {
+  margin: 20px 0;
+  /* este es el estilo de las tarjetas */ }
+
+.contact__services-items {
+  grid-column: 1/-1;
+  display: flex;
+  width: 100%;
+  /* este es el estilo de los íconos de las tarjetas */
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.contact__services-item {
+  width: 45%;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  /* este es el estilo de las tarjetas */
+  overflow: hidden;
+  height: 220px;
+  padding: 20px 10px;
+  text-align: center; }
+
+.contact__fa-solid {
+  font-size: 50px;
+  /* este es el estilo de los íconos de las tarjetas */
+  text-align: center; }
+
+/* Aqui comienza SASS compra */
+.tittle-logo-compra {
+  margin-right: 780px; }
+
+.compra2 {
+  padding-top: 80px;
+  /* este es el estilo de la sección sobre nosotros */ }
+  .compra2_subtitle2 {
+    color: #000;
+    font-size: 55px; }
+  .compra2_text {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* este es el estilo de los textos de la sección sobre nosotros */
+    justify-content: center;
+    font-size: 25px; }
+
+.compra {
+  background-color: #000;
+  color: #fff;
+  /* este es el estilo del main sobre nosotros */
+  height: auto;
+  padding: 60px 0; }
+  .compra_paragraph {
+    margin-top: 15px;
+    color: #979797;
+    font-size: 20px; }
+  .compra_text {
+    margin-left: 15px; }
+
+.compras {
+  padding: 80px 0; }
+  .compras__btn {
+    grid-column: 6/7;
+    width: 250px;
+    height: 100px;
+    /* este es el estílo del botón de la página de compra*/
+    font-weight: 700;
+    font-size: 25px;
+    background-color: #000; }
+    .compras__btn:hover {
+      background-color: #fff;
+      /* este es el estílo del hover del botón de la página de compra*/
+      border: solid 3px #000; }
+  .compras__href-btn {
+    text-decoration: none;
+    /* este es el estílo del link del botón de la página de compra*/
+    color: #fff; }
+    .compras__href-btn:hover {
+      color: #000; }
+
+/* Aqui comienza SASS footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* este es el estilo del footer */
+  padding: 60px 0; }
+  footer .footer-text {
+    grid-column: 1/-2;
+    margin-bottom: 50px;
+    /* este es el estilo del texto del footer */
+    font-size: 35px; }
+  footer .footer-item a {
+    color: white;
+    /* este es el estilo de las imagenes de las redes del footer */
+    font-size: 30px; }
+  footer .footer-item {
+    grid-column: span 3;
+    /* este es el estilo las grid de las images del footer*/
+    margin-bottom: 60px; }
+
+/* SASS de las animaciones */
 .animate__animated.animate__fadeIn {
   --animate-duration: 4s; }
 
@@ -276,127 +474,16 @@ body {
 .animate__animated.animate__rotateIn {
   --animate-duration: 2s; }
 
-/* aqui termina la duración de las animaciones */
-.tittle-logo-compra {
-  margin-right: 780px; }
-
-.subtile-contact {
-  font-weight: 400;
-  margin-left: 5px; }
-
-.paragraph {
-  margin-bottom: 20px;
-  /* este es el estilo de los párrafos */ }
-
-.img {
-  width: 95%;
-  max-width: 500px; }
-
-.text-index {
-  font-weight: 600; }
-
-/* este es el estilo del texto de index */
-.subtitle-index {
-  font-weight: 400; }
-
-.texts-index {
-  grid-column: 1/7;
-  padding-right: 20px;
-  /* este es el estilo de los textos del index */
-  padding-bottom: 150px; }
-
-.texts-contact p {
-  text-align: justify; }
-
-.text-contact {
-  font-weight: 600px;
-  /* este es el estilo del título de contacto */ }
-
-.cta {
-  width: 130px;
-  background-color: #000;
-  color: #fff;
-  display: inline-block;
-  /* este es el estilo del botón del index */
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  border-radius: 25px;
-  margin-bottom: 100px; }
-
-.tittle-services {
-  margin: 20px 0;
-  /* este es el estilo de las tarjetas */ }
-
-.services {
-  height: 370px;
-  /* este es el estilo de las tarjetas */
-  background: linear-gradient(180deg, #fff 50%, #000 50%); }
-
-.store1 {
-  margin-top: 100px; }
-  .store1__shops {
-    margin-bottom: 20px; }
-  .store1__shop {
-    text-align: center;
-    font-size: 50px;
-    /* este es el estilo del título de la tienda */
-    font-weight: 500; }
-
-.store__art {
-  display: flex;
-  flex-wrap: wrap;
-  /* <!-- Aqui se encuentra el estilo del contenedo de la imagen --> */
-  justify-content: center;
-  margin-bottom: 30px; }
-
-.mainindex__contact {
-  width: 500px;
-  margin: auto;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  /* este es el estilo del formulario */
-  background-color: #006eff05;
-  margin-bottom: 150px;
-  margin-right: 5px; }
-
-.img-contact {
-  margin-bottom: 150px;
-  /* este es el estilo del mapa de google maps */
-  margin-left: 5px; }
-
-.btn-contact {
-  width: 250px;
-  /* este es el estilo del botón del formulario de contacto */
-  margin-top: 20px; }
+/* SASS Bootstrap */
+.w-100 {
+  border-radius: 20px;
+  /* este es el estilo del carrusel de las imagenes */ }
 
 .card {
   width: 250px;
   border: none;
   padding: 5px;
   margin-bottom: 80px; }
-
-.btn-compra2 {
-  grid-column: 6/7;
-  width: 250px;
-  height: 100px;
-  /* este es el estílo del botón de la página de compra*/
-  font-weight: 700;
-  font-size: 25px;
-  background-color: #000; }
-
-.btn-compra2:hover {
-  background-color: #fff;
-  /* este es el estílo del hover del botón de la página de compra*/
-  border: solid 3px #000; }
-
-.href-btn {
-  text-decoration: none;
-  /* este es el estílo del link del botón de la página de compra*/
-  color: #fff; }
-
-.href-btn:hover {
-  color: #000; }
 
 /* Mediaquery Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
@@ -413,27 +500,32 @@ body {
     font-size: 45px;
     /* este es la reorganización del título de la página */
     padding: 0px 20px; }
-  .header__lista {
-    padding: 0 30px;
-    /* este es la reorganización de la navegación */
-    margin-top: 10px;
-    margin-right: 10px; }
   .grid {
     gap: 30px;
     /* este es la reorganización de las grid */ }
-  .index-carou, .texts-index {
+  .index__carou, .index__texts {
     grid-column: 1/-1;
     /* este es la reorganización de la imagen y el texto del index */ }
-  .index-carou {
+  .index__carou {
     text-align: center;
     /* este es la reorganización del contenedor de las imagenes del index*/ }
-  .texts-index {
+  .index__texts {
     margin-top: 40px; }
-  .services {
+  .contact__services {
     height: auto;
-    /* este es la reorganización de las tarjetas */
+    /* este es la reorganización de las tarjetas del contact */
     margin-top: 40px; }
-  .item {
+  .index__services {
+    height: auto;
+    /* este es la reorganización de las tarjetas del index */
+    margin-top: 40px; }
+  .contact__services-item {
+    width: 60%;
+    margin: 40px 0;
+    height: auto;
+    /* este es la reorganización del contenido dentro de las tarjetas */
+    padding: 40px; }
+  .index__services-item {
     width: 60%;
     margin: 40px 0;
     height: auto;
@@ -456,8 +548,6 @@ body {
     /* este es la reorganización del título de la tienda */ }
   .galery_text {
     margin-top: 90px; }
-  .navbar-about {
-    margin-left: 90px; }
   .store__carou {
     width: 450px;
     margin-bottom: 30px;
@@ -466,13 +556,13 @@ body {
     right: -9999px;
     margin: 0 auto;
     position: static; }
-  .text-contact {
+  .contact__text {
     margin-left: 50px; }
-  .paragraph {
+  .contact__paragraph {
     margin-left: 50px;
     /* este es la reorganización del contacto */ }
-  .mainindex__contact {
-    margin-left: 100px; }
+  .contact__mainindex {
+    margin-right: auto; }
   /* aquí comienza la reorganización de las grid de la galería */
   .galery_imagen1 {
     grid-column: 1/2; }
@@ -498,7 +588,7 @@ body {
   [class^="imagen"] {
     margin-left: 30px;
     /* este es la reorganización de las imágenes de la galería */ }
-  .img-contact, .texts-contact {
+  .contact__img, .contact__texts {
     grid-column: 1/-1;
     /* este es la reorganización de la imagen y el texto de contacto */ }
   .img-contact {
@@ -515,28 +605,33 @@ body {
     /* este es la reorganización del título de la página */
     font-size: 35px; }
   .tittle-logo-compra {
-    margin-right: 165px; }
+    margin-left: 40px; }
+  .compra {
+    margin-top: 100px; }
   .img {
     max-width: 170px;
     /* este es la reorganización de las imágenes */ }
-  .item {
+  .contact__services-item {
     width: 100%;
     margin: 5px 30px;
     /* este es la reorganización de las tarjetas */
     height: 200px;
     padding: 0px; }
-  .index-carou, .texts-index {
+  .index__services-item {
+    width: 100%;
+    margin: 5px 30px;
+    /* este es la reorganización de las tarjetas */
+    height: 200px;
+    padding: 0px; }
+  .index__carou, .index__texts {
     grid-column: 1/-1;
     /* este es la reorganización del texto y la imagen del index */ }
-  .index-carou {
+  .index__carou {
     text-align: center;
     /* este es la reorganización de la imagen del index */ }
   .about-us_text {
     margin: 15px;
     /* este es la reorganización del texto sobre nosotros */ }
-  [class^="footer-item"] {
-    grid-column: 1/-1;
-    /* este es la reorganización de las imagenes de las redes del footer */ }
   .store1__shop {
     margin-top: 130px;
     /* este es la reorganización del título de la tienda */
@@ -546,7 +641,7 @@ body {
     /* este es la reorganización del título sobre nosotros */ }
   .about-us2_subtitle2 {
     font-size: 40px; }
-  form {
+  .contact__mainindex {
     width: 300px;
     /* este es la reorganización del formulario */ }
   iframe {
@@ -559,10 +654,10 @@ body {
   [class^="galery_imagen"] {
     grid-column: 2/-2;
     /* este es la reorganización de las grid de las imagenes de la galería */ }
-  .img-contact, .texts-contact {
+  .contact__img, .contact__texts {
     grid-column: 1/-1;
     /* este es la reorganización de las grid de la imagen y el texto del contacto */ }
-  .img-contact {
+  .contact__img {
     text-align: center;
     /* este es la reorganización de la imagen del contacto */ }
   .store__carou {
@@ -576,9 +671,13 @@ body {
   .navbar-toggler {
     margin-left: auto;
     margin-bottom: 5px; }
-  .services {
+  .contact__services {
     height: 420px;
-    /* este es el estilo de las tarjetas */
+    /* este es el estilo de las tarjetas del contacto */
+    background: linear-gradient(180deg, #fff 50%, #000 50%); }
+  .index__services {
+    height: 420px;
+    /* este es el estilo de las tarjetas del index */
     background: linear-gradient(180deg, #fff 50%, #000 50%); }
   .d-flex {
     width: 300px; }

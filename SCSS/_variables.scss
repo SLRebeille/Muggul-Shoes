@@ -1,3 +1,42 @@
-/* COLORES */
+/* Estilos de la página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif; /* aquí está el estilo del body */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;                        /* aquí están los estilos de las grid en general */
+    height: 100%;
+    margin: auto;
+    grid-row-gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Colores */
+
 $color-principal: #fff;
 $color-secundario: #000;
+
+/* Imagenes */
+
+.img {
+    width: 95%;
+    max-width: 500px; 
+}
+
+/* Tarjetas index/contacto */
+
+.fa-solid {
+    font-size: 50px; 
+    text-align: center;
+}
