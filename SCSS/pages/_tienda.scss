@@ -1,0 +1,31 @@
+/* Aqui comienza SASS tienda */
+
+.store {
+    background-color:$color-principal;  /* este es el estilo del main de la tienda */
+    padding: 20px;
+    width: 100%;
+
+    &__carou {
+        width: 450px;
+        margin-bottom: 30px; /* este es el estilo del contenedor de las imagenes de latienda */
+        left: -9999px;
+        right: -9999px;  
+        margin: 0 auto;
+        position:static;
+    }
+
+    &__dropdown {
+        margin: 50px;
+        text-align: center;  /* este es el estilo del botón desplegable de la tienda */
+    }
+
+    &__btn {
+        text-decoration: none;
+        color: $color-principal;
+        
+
+        &__btn:hover {
+            color: $color-secundario;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+/* Aqui comienza SASS footer */
 
 .items {
     grid-column: 1/-1;
@@ -31,10 +32,6 @@
     margin-top: 40px;
 }
 
-.navbar-about {
-    margin-left: 650px;
-}
-
 .btn-about:hover {
     background-color: #000;   /* este es el estilo del botón de la barra de búsqueda del footer */
     border: solid #006eff;
@@ -46,20 +43,20 @@ footer {
     color: white;
     text-align: center;          /* este es el estilo del footer */
     padding: 60px 0;
-}
 
-.text-footer {
-    grid-column: 1/-2;
-    margin-bottom: 50px; /* este es el estilo del texto del footer */
-    font-size: 35px;
-}
+    .footer-text {
+        grid-column: 1/-2;
+        margin-bottom: 50px; /* este es el estilo del texto del footer */
+        font-size: 35px;
+    }
 
-[class^="footer-item"] a {
-    color: white;          /* este es el estilo de las imagenes de las redes del footer */
-    font-size: 30px;
-}
+    [class^="footer-item"] a {
+        color: white;          /* este es el estilo de las imagenes de las redes del footer */
+        font-size: 30px;
+    }
 
-[class^="footer-item"] {
-    grid-column: span 3;  /* este es el estilo las grid de las images del footer*/
-    margin-bottom: 60px;
+    [class^="footer-item"] {
+        grid-column: span 3;  /* este es el estilo las grid de las images del footer*/
+        margin-bottom: 60px;
+    }
 }

@@ -1,10 +1,13 @@
+/* Aqui comienza SASS header */
 
-.navbar-toggler {
-    margin-right: 30px;  /* este es el estilo del botón de la navegación */
-}
-
-.navbar-toggler-icon {
-    padding: 20px;
+.navbar {
+    position: static;
+    &-toggler {
+        margin-right: 30px;  /* este es el estilo del botón de la navegación */
+    }
+    &-toggler-icon {
+        padding: 20px;
+    }
 }
 
 .bg-dark {
@@ -27,11 +30,12 @@
 .btn-success {
     background-color: #000;     /* este es el estilo del botón de la navegación desplegable */
     border-color: white;
+
+    &-success:hover {
+        background-color: rgb(255, 255, 255); /* este es el estilo del hover del botón de la navegación desplegable */
+    }
 }
 
-.btn-success:hover {
-    background-color: rgb(255, 255, 255); /* este es el estilo del hover del botón de la navegación desplegable */
-}
 .btn:hover {
     color: black;    /* este es el estilo del hover del botón de la navegación desplegable */
 }
@@ -52,6 +56,10 @@
     font-size: 20px;
 }
 
+.header {
+    height: 400px;   /* este es el estilo del header */
+}
+
 .tittle-logo { 
     align-self: left;
     color: white;  /* este es el estilo del nombre de la página */
@@ -61,8 +69,4 @@
 
 .tittle-logo:hover {
     color: white;
-}
-
-.header {
-    height: 400px;   /* este es el estilo del header */
 }
