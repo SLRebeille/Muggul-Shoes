@@ -24,9 +24,7 @@
     padding: 60px 0;
 
     &_paragraph {
-        margin-top: 15px;
-        color: rgb(151, 151, 151);
-        font-size: 20px;
+        @extend .paragraph2;
     }
 
     &_text {
