@@ -65,11 +65,11 @@
     }
 
     &__services-items {
-        @extend .tarjetas1;                /* este es el estilo de los íconos de las tarjetas */
+        @extend .tarjetas1;                /* este es el extend del estilo de los iconos de las tarjetas */
     }
 
     &__services-item {
-        @extend .tarjetas2;            /* este es el estilo de las tarjetas */
+        @extend .tarjetas2;            /* este es el extend del estilo de las tarjetas */
     }
 
     &__fa-solid {

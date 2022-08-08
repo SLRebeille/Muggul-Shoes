@@ -24,7 +24,7 @@
     padding: 60px 0;
 
     &_paragraph {
-        @extend .paragraph2;
+        @extend .paragraph2;            /* Aquí está el extend del Sobre Nosotros */
     }
 
     &_text {
